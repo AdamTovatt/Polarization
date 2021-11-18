@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polarization", "Polarization\Polarization.csproj", "{D687F1E7-E963-49BB-851C-49CEDD522329}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D687F1E7-E963-49BB-851C-49CEDD522329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D687F1E7-E963-49BB-851C-49CEDD522329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D687F1E7-E963-49BB-851C-49CEDD522329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D687F1E7-E963-49BB-851C-49CEDD522329}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A939DCD-62D4-4766-A87C-B13C8BCB291A}
+	EndGlobalSection
+EndGlobal

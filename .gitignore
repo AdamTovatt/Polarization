@@ -1,0 +1,4 @@
+.vs/
+FruitFightApi/bin/*
+FruitFightApi/obj/*
+FruitFightApi/Properties/launchSettings.json
