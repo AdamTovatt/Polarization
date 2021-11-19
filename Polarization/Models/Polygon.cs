@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,8 @@ namespace Polarization.Models
 {
     class Polygon
     {
+        public int Length { get { return r.Length; } }
+
         Vector[] r;
 
         public Polygon(Vector[] r)
@@ -28,6 +31,30 @@ namespace Polarization.Models
                 array[5] = Math.Max(array[5], this.r[i].z);
             }
             return array;
+        }
+
+        public ScreenPoint[] GetScreenPoints()
+        {
+            ScreenPoint[] result = new ScreenPoint[r.Length];
+
+            for (int i = 0; i < r.Length; i++)
+            {
+                result[i] = new ScreenPoint((int)Math.Round(r[i].x), (int)Math.Round(r[i].y));
+            }
+
+            return result;
+        }
+
+        public PointF[] GetPoints()
+        {
+            PointF[] result = new PointF[r.Length];
+
+            for (int i = 0; i < r.Length; i++)
+            {
+                result[i] = new PointF((float)r[i].x, (float)r[i].y);
+            }
+
+            return result;
         }
 
         public int[] intx()

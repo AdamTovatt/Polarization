@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 
 namespace Polarization.Models
 {
@@ -27,14 +29,16 @@ namespace Polarization.Models
             for (int i = 0; i < this.axis.data().Length; ++i)
             {
                 Polygon pixel = this.axis.data()[i].project(this.view).rotate(this.view).pixel(this.origin, this.scale);
-                graphics.setColor(this.axis.color()[i]);
-                graphics.drawPolyline(pixel.intx(), pixel.inty(), pixel.length());
+
+                Pen pen = new Pen(axis.color()[i]);
+                graphics.DrawPolygon(pen, pixel.GetPoints());
             }
             for (int j = 0; j < this.wave.data().Length; ++j)
             {
                 Polygon pixel2 = this.wave.data()[j].project(this.view).rotate(this.view).pixel(this.origin, this.scale);
-                graphics.setColor(this.wave.color()[j]);
-                graphics.drawPolyline(pixel2.intx(), pixel2.inty(), pixel2.length());
+
+                Pen pen = new Pen(axis.color()[j]);
+                graphics.DrawPolygon(pen, pixel2.GetPoints());
             }
         }
 
