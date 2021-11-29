@@ -1,7 +1,7 @@
 ﻿
 namespace Polarization
 {
-    partial class Form1
+    partial class PolarizationLab
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@ namespace Polarization
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PolarizationLab));
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -565,15 +566,16 @@ namespace Polarization
             this.zMinTrackBar.Value = 100;
             this.zMinTrackBar.Scroll += new System.EventHandler(this.zMinTrackBar_Scroll);
             // 
-            // Form1
+            // PolarizationLab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(946, 625);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(600, 400);
-            this.Name = "Form1";
+            this.Name = "PolarizationLab";
             this.Text = "Polarization Lab";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResizeEnd += new System.EventHandler(this.Form1_ResizeEnd);

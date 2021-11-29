@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace Polarization
 {
-    public partial class Form1 : Form
+    public partial class PolarizationLab : Form
     {
         double dt;
         Axis axis;
@@ -53,7 +53,7 @@ namespace Polarization
         MyScrollbar zminSb;
         */
 
-        public Form1()
+        public PolarizationLab()
         {
             InitializeComponent();
             lastDrawTime = DateTime.UtcNow;
