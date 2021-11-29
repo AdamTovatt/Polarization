@@ -31,14 +31,14 @@ namespace Polarization.Models
                 Polygon pixel = this.axis.data()[i].project(this.view).rotate(this.view).pixel(this.origin, this.scale);
 
                 Pen pen = new Pen(Color.Black, 2);
-                graphics.DrawPolygon(pen, pixel.GetPoints());
+                graphics.DrawLines(pen, pixel.GetPoints());
             }
             for (int j = 0; j < this.wave.data().Length; ++j)
             {
                 Polygon pixel2 = this.wave.data()[j].project(this.view).rotate(this.view).pixel(this.origin, this.scale);
 
-                Pen pen = new Pen(wave.Colors[j], 3);
-                graphics.DrawPolygon(pen, pixel2.GetPoints());
+                Pen pen = new Pen(wave.Colors[j], j == 0 ? 3 : 4);
+                graphics.DrawLines(pen, pixel2.GetPoints());
             }
         }
 
