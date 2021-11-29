@@ -33,18 +33,6 @@ namespace Polarization.Models
             return array;
         }
 
-        public ScreenPoint[] GetScreenPoints()
-        {
-            ScreenPoint[] result = new ScreenPoint[r.Length];
-
-            for (int i = 0; i < r.Length; i++)
-            {
-                result[i] = new ScreenPoint((int)Math.Round(r[i].x), (int)Math.Round(r[i].y));
-            }
-
-            return result;
-        }
-
         public PointF[] GetPoints()
         {
             PointF[] result = new PointF[r.Length];

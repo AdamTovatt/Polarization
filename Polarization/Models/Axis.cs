@@ -4,9 +4,11 @@ namespace Polarization.Models
 {
     class Axis : ObjectToDraw
     {
-        double[] bb;
-        Polygon[] p;
-        Color[] c;
+        public Color[] Colors { get; set; }
+
+        public double[] bb;
+        public Polygon[] p;
+        public Color[] c;
 
 
         public Axis(double[] bb)

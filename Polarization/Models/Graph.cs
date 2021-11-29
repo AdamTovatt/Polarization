@@ -6,13 +6,13 @@ namespace Polarization.Models
 {
     class Graph
     {
-        int w;
-        int h;
-        Vector view;
-        Vector origin;
-        Vector scale;
-        ObjectToDraw axis;
-        ObjectToDraw wave;
+        public int w;
+        public int h;
+        public Vector view;
+        public Vector origin;
+        public Vector scale;
+        public ObjectToDraw axis;
+        public ObjectToDraw wave;
 
         public Graph(int w, int h, ObjectToDraw axis, ObjectToDraw wave, Vector view)
         {
@@ -30,14 +30,14 @@ namespace Polarization.Models
             {
                 Polygon pixel = this.axis.data()[i].project(this.view).rotate(this.view).pixel(this.origin, this.scale);
 
-                Pen pen = new Pen(axis.color()[i]);
+                Pen pen = new Pen(Color.Black, 2);
                 graphics.DrawPolygon(pen, pixel.GetPoints());
             }
             for (int j = 0; j < this.wave.data().Length; ++j)
             {
                 Polygon pixel2 = this.wave.data()[j].project(this.view).rotate(this.view).pixel(this.origin, this.scale);
 
-                Pen pen = new Pen(axis.color()[j]);
+                Pen pen = new Pen(wave.Colors[j], 3);
                 graphics.DrawPolygon(pen, pixel2.GetPoints());
             }
         }

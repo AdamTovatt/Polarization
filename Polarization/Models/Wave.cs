@@ -9,23 +9,29 @@ namespace Polarization.Models
 {
     class Wave : ObjectToDraw
     {
-        int N;
-        int M;
-        double t;
-        double[] bb;
-        double[] a;
-        Vector[] e;
-        Vector[] n;
-        double[] k;
-        double[] w;
-        double[] d;
-        double rmin;
-        double rmax;
-        Polygon[] p;
-        Color[] c;
+        public Color[] Colors { get; set; }
 
-        public Wave(double n, Vector vector, Vector vector2, double n2, double n3, double n4, double[] bb)
+        public int N;
+        public int M;
+        public double t;
+        public double[] bb;
+        public double[] a;
+        public Vector[] e;
+        public Vector[] n;
+        public double[] k;
+        public double[] w;
+        public double[] d;
+        public double rmin;
+        public double rmax;
+        public Polygon[] p;
+        public Color[] c;
+
+        public Wave(Color primaryColor, Color secondaryColor, double n, Vector vector, Vector vector2, double n2, double n3, double n4, double[] bb)
         {
+            Colors = new Color[2];
+            Colors[0] = primaryColor;
+            Colors[1] = secondaryColor;
+
             this.N = 200;
             this.a = new double[2];
             this.e = new Vector[2];
@@ -34,8 +40,6 @@ namespace Polarization.Models
             this.w = new double[2];
             this.d = new double[2];
             this.p = new Polygon[2];
-            (this.c = new Color[2])[0] = Color.Red;
-            this.c[1] = Color.Blue;
             this.t = 0.0;
             this.M = 1;
             this.a[0] = n;

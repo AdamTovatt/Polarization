@@ -4,6 +4,8 @@ namespace Polarization.Models
 {
     interface ObjectToDraw
     {
+        Color[] Colors { get; set; }
+
         Color[] color();
         Polygon[] data();
         void update();
