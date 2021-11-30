@@ -104,6 +104,8 @@ namespace Polarization
             viewRLabel.Text = string.Format("r: {0}", (viewRTrackBar.Value / 1.0).ToString("0.00"));
             viewTetaLabel.Text = string.Format("teta: {0} π", (viewTetaTrackBar.Value / 100.0).ToString("0.00"));
             viewFiLabel.Text = string.Format("fi: {0} π", (viewFiTrackBar.Value / 100.0).ToString("0.00"));
+
+            zoomLabel.Text = string.Format("zoom: {0}", (zoomTrackBar.Value / 10.0).ToString("0.00"));
         }
 
         private void ApplySliderValues()
@@ -120,15 +122,17 @@ namespace Polarization
             wave.bb[2] = (zMinTrackBar.Value / -100.0);
             axis.bb[5] = (zMaxTrackBar.Value / 100.0);
             wave.bb[5] = (zMaxTrackBar.Value / 100.0);
+            graph.Zoom = (2.2 - (zoomTrackBar.Value / 10.0));
             double value = (viewRTrackBar.Value / 1.0);
             double a = 3.141592653589793 * (viewTetaTrackBar.Value / 100.0);
             double n = 3.141592653589793 * (viewFiTrackBar.Value / 100.0);
             graph.view = new Vector(value * Math.Sin(a) * Math.Sin(n), value * Math.Cos(a), value * Math.Sin(a) * Math.Cos(n));
+            graph.updateView();
         }
 
         private void InitGraph()
         {
-            graph = new Graph(pictureBox.Width, pictureBox.Height, this.axis, this.wave, new Vector(5.0, 7.1, 5.0));
+            graph = new Graph(pictureBox.Width, pictureBox.Height, this.axis, this.wave, new Vector(1, 1, 1));
             ApplySliderValues();
         }
 
@@ -290,6 +294,12 @@ namespace Polarization
         }
 
         private void zMaxTrackBar_Scroll(object sender, EventArgs e)
+        {
+            UpdateSliderValueLabels();
+            ApplySliderValues();
+        }
+
+        private void zoomTrackBar_Scroll(object sender, EventArgs e)
         {
             UpdateSliderValueLabels();
             ApplySliderValues();

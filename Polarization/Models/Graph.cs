@@ -6,6 +6,8 @@ namespace Polarization.Models
 {
     class Graph
     {
+        public double Zoom { get; set; } = 1;
+
         public int w;
         public int h;
         public Vector view;
@@ -61,8 +63,8 @@ namespace Polarization.Models
             double n = -min;
             double n2 = (boundingBox[0] + boundingBox[3]) / 2.0 - (this.w - 1) / (2.0 * min);
             double n3 = (boundingBox[1] + boundingBox[4]) / 2.0 - (this.h - 1) / (2.0 * n);
-            this.scale = new Vector(min, n, 1.0);
-            this.origin = new Vector(n2, n3, 0.0);
+            this.scale = new Vector(min / Zoom, n / Zoom, 1.0 / Zoom);
+            this.origin = new Vector(n2 * Zoom, n3 * Zoom, 0.0 * Zoom);
         }
     }
 }

@@ -70,6 +70,8 @@ namespace Polarization
             this.amplitude2Label = new System.Windows.Forms.Label();
             this.amplitude2TrackBar = new System.Windows.Forms.TrackBar();
             this.rightPanelTitle = new System.Windows.Forms.Label();
+            this.zoomLabel = new System.Windows.Forms.Label();
+            this.zoomTrackBar = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -89,6 +91,7 @@ namespace Polarization
             ((System.ComponentModel.ISupportInitialize)(this.frequency2TrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waveLength2TrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.amplitude2TrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox
@@ -300,7 +303,7 @@ namespace Polarization
             this.leftPanelTitle.Name = "leftPanelTitle";
             this.leftPanelTitle.Size = new System.Drawing.Size(200, 23);
             this.leftPanelTitle.TabIndex = 1;
-            this.leftPanelTitle.Text = "x - Component";
+            this.leftPanelTitle.Text = "y - Component";
             this.leftPanelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // amplitude1TrackBar
@@ -391,6 +394,8 @@ namespace Polarization
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.zoomLabel);
+            this.panel2.Controls.Add(this.zoomTrackBar);
             this.panel2.Controls.Add(this.zMaxLabel);
             this.panel2.Controls.Add(this.zMaxTrackBar);
             this.panel2.Controls.Add(this.zMinLabel);
@@ -413,7 +418,7 @@ namespace Polarization
             // zMaxLabel
             // 
             this.zMaxLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zMaxLabel.Location = new System.Drawing.Point(23, 535);
+            this.zMaxLabel.Location = new System.Drawing.Point(26, 463);
             this.zMaxLabel.Name = "zMaxLabel";
             this.zMaxLabel.Size = new System.Drawing.Size(171, 23);
             this.zMaxLabel.TabIndex = 26;
@@ -423,7 +428,7 @@ namespace Polarization
             // zMaxTrackBar
             // 
             this.zMaxTrackBar.LargeChange = 10;
-            this.zMaxTrackBar.Location = new System.Drawing.Point(20, 561);
+            this.zMaxTrackBar.Location = new System.Drawing.Point(23, 489);
             this.zMaxTrackBar.Maximum = 100;
             this.zMaxTrackBar.Name = "zMaxTrackBar";
             this.zMaxTrackBar.Size = new System.Drawing.Size(154, 45);
@@ -435,7 +440,7 @@ namespace Polarization
             // zMinLabel
             // 
             this.zMinLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zMinLabel.Location = new System.Drawing.Point(26, 461);
+            this.zMinLabel.Location = new System.Drawing.Point(26, 402);
             this.zMinLabel.Name = "zMinLabel";
             this.zMinLabel.Size = new System.Drawing.Size(171, 23);
             this.zMinLabel.TabIndex = 24;
@@ -445,7 +450,7 @@ namespace Polarization
             // zMinTrackBar
             // 
             this.zMinTrackBar.LargeChange = 10;
-            this.zMinTrackBar.Location = new System.Drawing.Point(23, 487);
+            this.zMinTrackBar.Location = new System.Drawing.Point(23, 428);
             this.zMinTrackBar.Maximum = 100;
             this.zMinTrackBar.Name = "zMinTrackBar";
             this.zMinTrackBar.Size = new System.Drawing.Size(154, 45);
@@ -458,7 +463,7 @@ namespace Polarization
             // axisLimitTitle
             // 
             this.axisLimitTitle.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.axisLimitTitle.Location = new System.Drawing.Point(0, 424);
+            this.axisLimitTitle.Location = new System.Drawing.Point(0, 365);
             this.axisLimitTitle.Name = "axisLimitTitle";
             this.axisLimitTitle.Size = new System.Drawing.Size(200, 23);
             this.axisLimitTitle.TabIndex = 23;
@@ -563,8 +568,31 @@ namespace Polarization
             this.rightPanelTitle.Name = "rightPanelTitle";
             this.rightPanelTitle.Size = new System.Drawing.Size(200, 23);
             this.rightPanelTitle.TabIndex = 0;
-            this.rightPanelTitle.Text = "y - Component";
+            this.rightPanelTitle.Text = "z - Component";
             this.rightPanelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // zoomLabel
+            // 
+            this.zoomLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zoomLabel.Location = new System.Drawing.Point(26, 528);
+            this.zoomLabel.Name = "zoomLabel";
+            this.zoomLabel.Size = new System.Drawing.Size(171, 23);
+            this.zoomLabel.TabIndex = 28;
+            this.zoomLabel.Text = "zoom:";
+            this.zoomLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // zoomTrackBar
+            // 
+            this.zoomTrackBar.LargeChange = 10;
+            this.zoomTrackBar.Location = new System.Drawing.Point(23, 554);
+            this.zoomTrackBar.Maximum = 20;
+            this.zoomTrackBar.Name = "zoomTrackBar";
+            this.zoomTrackBar.Size = new System.Drawing.Size(154, 45);
+            this.zoomTrackBar.SmallChange = 10;
+            this.zoomTrackBar.TabIndex = 29;
+            this.zoomTrackBar.TickFrequency = 5;
+            this.zoomTrackBar.Value = 10;
+            this.zoomTrackBar.Scroll += new System.EventHandler(this.zoomTrackBar_Scroll);
             // 
             // PolarizationLab
             // 
@@ -602,6 +630,7 @@ namespace Polarization
             ((System.ComponentModel.ISupportInitialize)(this.frequency2TrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.waveLength2TrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.amplitude2TrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -648,6 +677,8 @@ namespace Polarization
         private System.Windows.Forms.TrackBar zMaxTrackBar;
         private System.Windows.Forms.Label zMinLabel;
         private System.Windows.Forms.TrackBar zMinTrackBar;
+        private System.Windows.Forms.Label zoomLabel;
+        private System.Windows.Forms.TrackBar zoomTrackBar;
     }
 }
 
