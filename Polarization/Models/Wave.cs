@@ -10,6 +10,7 @@ namespace Polarization.Models
     class Wave : ObjectToDraw
     {
         public Color[] Colors { get; set; }
+        public Polygon[] Data { get; set; }
 
         public int N;
         public int M;
@@ -23,7 +24,6 @@ namespace Polarization.Models
         public double[] d;
         public double rmin;
         public double rmax;
-        public Polygon[] p;
         public Color[] c;
 
         public Wave(Color primaryColor, Color secondaryColor, double n, Vector vector, Vector vector2, double n2, double n3, double n4, double[] bb)
@@ -39,7 +39,7 @@ namespace Polarization.Models
             this.k = new double[2];
             this.w = new double[2];
             this.d = new double[2];
-            this.p = new Polygon[2];
+            Data = new Polygon[2];
             this.t = 0.0;
             this.M = 1;
             this.a[0] = n;
@@ -72,11 +72,6 @@ namespace Polarization.Models
             return this.c;
         }
 
-        public Polygon[] data()
-        {
-            return this.p;
-        }
-
         public void update()
         {
             this.rmin = Math.Min(this.bb[0] / this.n[0].x, this.bb[3] / this.n[0].x);
@@ -101,7 +96,7 @@ namespace Polarization.Models
                     array[i] = array[i].add(this.e[j].scale(this.a[j] * Math.Cos(this.k[j] * this.n[j].mult(scale) - this.w[j] * this.t + this.d[j])));
                 }
             }
-            this.p[0] = new Polygon(array);
+            Data[0] = new Polygon(array);
             Vector[] array2 = new Vector[5];
             Vector vector = new Vector(0.0, 0.0, 0.0);
             array2[1] = (array2[0] = vector);
@@ -115,7 +110,7 @@ namespace Polarization.Models
             array2[2] = array2[1].add(scale2);
             array2[3] = array2[1];
             array2[4] = array2[1].add(prod);
-            this.p[1] = new Polygon(array2);
+            Data[1] = new Polygon(array2);
         }
     }
 }
