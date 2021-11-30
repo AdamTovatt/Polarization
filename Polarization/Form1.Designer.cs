@@ -33,30 +33,34 @@ namespace Polarization
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.rightPanelTitle = new System.Windows.Forms.Label();
-            this.leftPanelTitle = new System.Windows.Forms.Label();
-            this.timeScaleTrackBar = new System.Windows.Forms.TrackBar();
-            this.middlePanel = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.timeScaleLabel = new System.Windows.Forms.Label();
-            this.startButton = new System.Windows.Forms.Button();
-            this.stopButton = new System.Windows.Forms.Button();
-            this.amplitude1Label = new System.Windows.Forms.Label();
-            this.amplitude1TrackBar = new System.Windows.Forms.TrackBar();
-            this.waveLength1Label = new System.Windows.Forms.Label();
-            this.waveLength1TrackBar = new System.Windows.Forms.TrackBar();
-            this.frequency1Label = new System.Windows.Forms.Label();
-            this.frequency1TrackBar = new System.Windows.Forms.TrackBar();
-            this.phase1Label = new System.Windows.Forms.Label();
-            this.phase1TrackBar = new System.Windows.Forms.TrackBar();
-            this.viewRLabel = new System.Windows.Forms.Label();
-            this.viewRTrackBar = new System.Windows.Forms.TrackBar();
-            this.viewTitle = new System.Windows.Forms.Label();
-            this.viewTetaLabel = new System.Windows.Forms.Label();
-            this.viewTetaTrackBar = new System.Windows.Forms.TrackBar();
             this.viewFiLabel = new System.Windows.Forms.Label();
             this.viewFiTrackBar = new System.Windows.Forms.TrackBar();
+            this.viewTetaLabel = new System.Windows.Forms.Label();
+            this.viewTetaTrackBar = new System.Windows.Forms.TrackBar();
+            this.viewTitle = new System.Windows.Forms.Label();
+            this.viewRLabel = new System.Windows.Forms.Label();
+            this.viewRTrackBar = new System.Windows.Forms.TrackBar();
+            this.phase1Label = new System.Windows.Forms.Label();
+            this.phase1TrackBar = new System.Windows.Forms.TrackBar();
+            this.frequency1Label = new System.Windows.Forms.Label();
+            this.frequency1TrackBar = new System.Windows.Forms.TrackBar();
+            this.waveLength1Label = new System.Windows.Forms.Label();
+            this.waveLength1TrackBar = new System.Windows.Forms.TrackBar();
+            this.amplitude1Label = new System.Windows.Forms.Label();
+            this.leftPanelTitle = new System.Windows.Forms.Label();
+            this.amplitude1TrackBar = new System.Windows.Forms.TrackBar();
+            this.middlePanel = new System.Windows.Forms.Panel();
+            this.stopButton = new System.Windows.Forms.Button();
+            this.startButton = new System.Windows.Forms.Button();
+            this.timeScaleLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.timeScaleTrackBar = new System.Windows.Forms.TrackBar();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.zMaxLabel = new System.Windows.Forms.Label();
+            this.zMaxTrackBar = new System.Windows.Forms.TrackBar();
+            this.zMinLabel = new System.Windows.Forms.Label();
+            this.zMinTrackBar = new System.Windows.Forms.TrackBar();
+            this.axisLimitTitle = new System.Windows.Forms.Label();
             this.phase2Label = new System.Windows.Forms.Label();
             this.phase2TrackBar = new System.Windows.Forms.TrackBar();
             this.frequency2Label = new System.Windows.Forms.Label();
@@ -65,30 +69,26 @@ namespace Polarization
             this.waveLength2TrackBar = new System.Windows.Forms.TrackBar();
             this.amplitude2Label = new System.Windows.Forms.Label();
             this.amplitude2TrackBar = new System.Windows.Forms.TrackBar();
-            this.axisLimitTitle = new System.Windows.Forms.Label();
-            this.zMaxLabel = new System.Windows.Forms.Label();
-            this.zMaxTrackBar = new System.Windows.Forms.TrackBar();
-            this.zMinLabel = new System.Windows.Forms.Label();
-            this.zMinTrackBar = new System.Windows.Forms.TrackBar();
+            this.rightPanelTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.timeScaleTrackBar)).BeginInit();
-            this.middlePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.amplitude1TrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.waveLength1TrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.frequency1TrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phase1TrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewRTrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewTetaTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewFiTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewTetaTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewRTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phase1TrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frequency1TrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waveLength1TrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amplitude1TrackBar)).BeginInit();
+            this.middlePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.timeScaleTrackBar)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.zMaxTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zMinTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phase2TrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.frequency2TrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.waveLength2TrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.amplitude2TrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zMaxTrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zMinTrackBar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox
@@ -135,6 +135,259 @@ namespace Polarization
             this.panel1.Size = new System.Drawing.Size(200, 622);
             this.panel1.TabIndex = 1;
             // 
+            // viewFiLabel
+            // 
+            this.viewFiLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewFiLabel.Location = new System.Drawing.Point(26, 548);
+            this.viewFiLabel.Name = "viewFiLabel";
+            this.viewFiLabel.Size = new System.Drawing.Size(171, 23);
+            this.viewFiLabel.TabIndex = 20;
+            this.viewFiLabel.Text = "fi: 0,2 Pi";
+            this.viewFiLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // viewFiTrackBar
+            // 
+            this.viewFiTrackBar.LargeChange = 10;
+            this.viewFiTrackBar.Location = new System.Drawing.Point(23, 574);
+            this.viewFiTrackBar.Maximum = 100;
+            this.viewFiTrackBar.Name = "viewFiTrackBar";
+            this.viewFiTrackBar.Size = new System.Drawing.Size(154, 45);
+            this.viewFiTrackBar.SmallChange = 10;
+            this.viewFiTrackBar.TabIndex = 21;
+            this.viewFiTrackBar.TickFrequency = 10;
+            this.viewFiTrackBar.Value = 20;
+            this.viewFiTrackBar.Scroll += new System.EventHandler(this.viewFiTrackBar_Scroll);
+            // 
+            // viewTetaLabel
+            // 
+            this.viewTetaLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewTetaLabel.Location = new System.Drawing.Point(26, 487);
+            this.viewTetaLabel.Name = "viewTetaLabel";
+            this.viewTetaLabel.Size = new System.Drawing.Size(171, 23);
+            this.viewTetaLabel.TabIndex = 18;
+            this.viewTetaLabel.Text = "teta: 0,4 Pi";
+            this.viewTetaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // viewTetaTrackBar
+            // 
+            this.viewTetaTrackBar.LargeChange = 10;
+            this.viewTetaTrackBar.Location = new System.Drawing.Point(23, 513);
+            this.viewTetaTrackBar.Maximum = 100;
+            this.viewTetaTrackBar.Name = "viewTetaTrackBar";
+            this.viewTetaTrackBar.Size = new System.Drawing.Size(154, 45);
+            this.viewTetaTrackBar.SmallChange = 10;
+            this.viewTetaTrackBar.TabIndex = 19;
+            this.viewTetaTrackBar.TickFrequency = 10;
+            this.viewTetaTrackBar.Value = 40;
+            this.viewTetaTrackBar.Scroll += new System.EventHandler(this.viewTetaTrackBar_Scroll);
+            // 
+            // viewTitle
+            // 
+            this.viewTitle.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewTitle.Location = new System.Drawing.Point(0, 388);
+            this.viewTitle.Name = "viewTitle";
+            this.viewTitle.Size = new System.Drawing.Size(200, 23);
+            this.viewTitle.TabIndex = 17;
+            this.viewTitle.Text = "View";
+            this.viewTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // viewRLabel
+            // 
+            this.viewRLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewRLabel.Location = new System.Drawing.Point(26, 424);
+            this.viewRLabel.Name = "viewRLabel";
+            this.viewRLabel.Size = new System.Drawing.Size(171, 23);
+            this.viewRLabel.TabIndex = 15;
+            this.viewRLabel.Text = "r: 3";
+            this.viewRLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // viewRTrackBar
+            // 
+            this.viewRTrackBar.LargeChange = 10;
+            this.viewRTrackBar.Location = new System.Drawing.Point(23, 450);
+            this.viewRTrackBar.Maximum = 100;
+            this.viewRTrackBar.Minimum = 1;
+            this.viewRTrackBar.Name = "viewRTrackBar";
+            this.viewRTrackBar.Size = new System.Drawing.Size(154, 45);
+            this.viewRTrackBar.SmallChange = 10;
+            this.viewRTrackBar.TabIndex = 16;
+            this.viewRTrackBar.TickFrequency = 5;
+            this.viewRTrackBar.Value = 3;
+            this.viewRTrackBar.Scroll += new System.EventHandler(this.viewRTrackBar_Scroll);
+            // 
+            // phase1Label
+            // 
+            this.phase1Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phase1Label.Location = new System.Drawing.Point(23, 291);
+            this.phase1Label.Name = "phase1Label";
+            this.phase1Label.Size = new System.Drawing.Size(171, 23);
+            this.phase1Label.TabIndex = 13;
+            this.phase1Label.Text = "Phase 0 Pi";
+            this.phase1Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // phase1TrackBar
+            // 
+            this.phase1TrackBar.LargeChange = 10;
+            this.phase1TrackBar.Location = new System.Drawing.Point(20, 317);
+            this.phase1TrackBar.Maximum = 200;
+            this.phase1TrackBar.Name = "phase1TrackBar";
+            this.phase1TrackBar.Size = new System.Drawing.Size(154, 45);
+            this.phase1TrackBar.SmallChange = 10;
+            this.phase1TrackBar.TabIndex = 14;
+            this.phase1TrackBar.TickFrequency = 20;
+            this.phase1TrackBar.Scroll += new System.EventHandler(this.phase1TrackBar_Scroll);
+            // 
+            // frequency1Label
+            // 
+            this.frequency1Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frequency1Label.Location = new System.Drawing.Point(26, 217);
+            this.frequency1Label.Name = "frequency1Label";
+            this.frequency1Label.Size = new System.Drawing.Size(171, 23);
+            this.frequency1Label.TabIndex = 11;
+            this.frequency1Label.Text = "Frequency: 0";
+            this.frequency1Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // frequency1TrackBar
+            // 
+            this.frequency1TrackBar.LargeChange = 10;
+            this.frequency1TrackBar.Location = new System.Drawing.Point(23, 243);
+            this.frequency1TrackBar.Maximum = 100;
+            this.frequency1TrackBar.Name = "frequency1TrackBar";
+            this.frequency1TrackBar.Size = new System.Drawing.Size(154, 45);
+            this.frequency1TrackBar.SmallChange = 10;
+            this.frequency1TrackBar.TabIndex = 12;
+            this.frequency1TrackBar.TickFrequency = 20;
+            this.frequency1TrackBar.Value = 10;
+            this.frequency1TrackBar.Scroll += new System.EventHandler(this.frequency1TrackBar_Scroll);
+            // 
+            // waveLength1Label
+            // 
+            this.waveLength1Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.waveLength1Label.Location = new System.Drawing.Point(29, 143);
+            this.waveLength1Label.Name = "waveLength1Label";
+            this.waveLength1Label.Size = new System.Drawing.Size(171, 23);
+            this.waveLength1Label.TabIndex = 9;
+            this.waveLength1Label.Text = "Wavelength: 0";
+            this.waveLength1Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // waveLength1TrackBar
+            // 
+            this.waveLength1TrackBar.LargeChange = 10;
+            this.waveLength1TrackBar.Location = new System.Drawing.Point(26, 169);
+            this.waveLength1TrackBar.Maximum = 100;
+            this.waveLength1TrackBar.Name = "waveLength1TrackBar";
+            this.waveLength1TrackBar.Size = new System.Drawing.Size(154, 45);
+            this.waveLength1TrackBar.SmallChange = 10;
+            this.waveLength1TrackBar.TabIndex = 10;
+            this.waveLength1TrackBar.TickFrequency = 20;
+            this.waveLength1TrackBar.Value = 25;
+            this.waveLength1TrackBar.Scroll += new System.EventHandler(this.waveLength1TrackBar_Scroll);
+            // 
+            // amplitude1Label
+            // 
+            this.amplitude1Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amplitude1Label.Location = new System.Drawing.Point(26, 69);
+            this.amplitude1Label.Name = "amplitude1Label";
+            this.amplitude1Label.Size = new System.Drawing.Size(171, 23);
+            this.amplitude1Label.TabIndex = 7;
+            this.amplitude1Label.Text = "Amplitude: 0 π";
+            this.amplitude1Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // leftPanelTitle
+            // 
+            this.leftPanelTitle.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.leftPanelTitle.Location = new System.Drawing.Point(0, 18);
+            this.leftPanelTitle.Name = "leftPanelTitle";
+            this.leftPanelTitle.Size = new System.Drawing.Size(200, 23);
+            this.leftPanelTitle.TabIndex = 1;
+            this.leftPanelTitle.Text = "x - Component";
+            this.leftPanelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // amplitude1TrackBar
+            // 
+            this.amplitude1TrackBar.LargeChange = 10;
+            this.amplitude1TrackBar.Location = new System.Drawing.Point(23, 95);
+            this.amplitude1TrackBar.Maximum = 100;
+            this.amplitude1TrackBar.Name = "amplitude1TrackBar";
+            this.amplitude1TrackBar.Size = new System.Drawing.Size(154, 45);
+            this.amplitude1TrackBar.SmallChange = 10;
+            this.amplitude1TrackBar.TabIndex = 8;
+            this.amplitude1TrackBar.TickFrequency = 20;
+            this.amplitude1TrackBar.Scroll += new System.EventHandler(this.amplitude1TrackBar_Scroll);
+            // 
+            // middlePanel
+            // 
+            this.middlePanel.Controls.Add(this.stopButton);
+            this.middlePanel.Controls.Add(this.startButton);
+            this.middlePanel.Controls.Add(this.timeScaleLabel);
+            this.middlePanel.Controls.Add(this.label2);
+            this.middlePanel.Controls.Add(this.pictureBox);
+            this.middlePanel.Controls.Add(this.timeScaleTrackBar);
+            this.middlePanel.Location = new System.Drawing.Point(209, 3);
+            this.middlePanel.Name = "middlePanel";
+            this.middlePanel.Size = new System.Drawing.Size(526, 622);
+            this.middlePanel.TabIndex = 4;
+            // 
+            // stopButton
+            // 
+            this.stopButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.stopButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stopButton.Location = new System.Drawing.Point(390, 550);
+            this.stopButton.Name = "stopButton";
+            this.stopButton.Size = new System.Drawing.Size(82, 45);
+            this.stopButton.TabIndex = 6;
+            this.stopButton.Text = "Stop";
+            this.stopButton.UseVisualStyleBackColor = true;
+            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
+            // 
+            // startButton
+            // 
+            this.startButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startButton.Location = new System.Drawing.Point(284, 550);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(82, 45);
+            this.startButton.TabIndex = 5;
+            this.startButton.Text = "Start";
+            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            // 
+            // timeScaleLabel
+            // 
+            this.timeScaleLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.timeScaleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeScaleLabel.Location = new System.Drawing.Point(28, 590);
+            this.timeScaleLabel.Name = "timeScaleLabel";
+            this.timeScaleLabel.Size = new System.Drawing.Size(219, 23);
+            this.timeScaleLabel.TabIndex = 4;
+            this.timeScaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(28, 524);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(219, 23);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Time Scale";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timeScaleTrackBar
+            // 
+            this.timeScaleTrackBar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.timeScaleTrackBar.LargeChange = 10;
+            this.timeScaleTrackBar.Location = new System.Drawing.Point(28, 550);
+            this.timeScaleTrackBar.Maximum = 200;
+            this.timeScaleTrackBar.Name = "timeScaleTrackBar";
+            this.timeScaleTrackBar.Size = new System.Drawing.Size(219, 45);
+            this.timeScaleTrackBar.SmallChange = 10;
+            this.timeScaleTrackBar.TabIndex = 3;
+            this.timeScaleTrackBar.TickFrequency = 20;
+            this.timeScaleTrackBar.TickStyle = System.Windows.Forms.TickStyle.Both;
+            this.timeScaleTrackBar.Value = 100;
+            this.timeScaleTrackBar.Scroll += new System.EventHandler(this.timeScaleTrackBar_Scroll);
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -157,272 +410,64 @@ namespace Polarization
             this.panel2.Size = new System.Drawing.Size(200, 622);
             this.panel2.TabIndex = 2;
             // 
-            // rightPanelTitle
+            // zMaxLabel
             // 
-            this.rightPanelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rightPanelTitle.Location = new System.Drawing.Point(0, 18);
-            this.rightPanelTitle.Name = "rightPanelTitle";
-            this.rightPanelTitle.Size = new System.Drawing.Size(200, 23);
-            this.rightPanelTitle.TabIndex = 0;
-            this.rightPanelTitle.Text = "y - Component";
-            this.rightPanelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.zMaxLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zMaxLabel.Location = new System.Drawing.Point(23, 535);
+            this.zMaxLabel.Name = "zMaxLabel";
+            this.zMaxLabel.Size = new System.Drawing.Size(171, 23);
+            this.zMaxLabel.TabIndex = 26;
+            this.zMaxLabel.Text = "zmax:";
+            this.zMaxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // leftPanelTitle
+            // zMaxTrackBar
             // 
-            this.leftPanelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.leftPanelTitle.Location = new System.Drawing.Point(0, 18);
-            this.leftPanelTitle.Name = "leftPanelTitle";
-            this.leftPanelTitle.Size = new System.Drawing.Size(200, 23);
-            this.leftPanelTitle.TabIndex = 1;
-            this.leftPanelTitle.Text = "x - Component";
-            this.leftPanelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.zMaxTrackBar.LargeChange = 10;
+            this.zMaxTrackBar.Location = new System.Drawing.Point(20, 561);
+            this.zMaxTrackBar.Maximum = 100;
+            this.zMaxTrackBar.Name = "zMaxTrackBar";
+            this.zMaxTrackBar.Size = new System.Drawing.Size(154, 45);
+            this.zMaxTrackBar.SmallChange = 10;
+            this.zMaxTrackBar.TabIndex = 27;
+            this.zMaxTrackBar.TickFrequency = 20;
+            this.zMaxTrackBar.Scroll += new System.EventHandler(this.zMaxTrackBar_Scroll);
             // 
-            // timeScaleTrackBar
+            // zMinLabel
             // 
-            this.timeScaleTrackBar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.timeScaleTrackBar.LargeChange = 10;
-            this.timeScaleTrackBar.Location = new System.Drawing.Point(28, 550);
-            this.timeScaleTrackBar.Maximum = 200;
-            this.timeScaleTrackBar.Name = "timeScaleTrackBar";
-            this.timeScaleTrackBar.Size = new System.Drawing.Size(219, 45);
-            this.timeScaleTrackBar.SmallChange = 10;
-            this.timeScaleTrackBar.TabIndex = 3;
-            this.timeScaleTrackBar.TickFrequency = 20;
-            this.timeScaleTrackBar.TickStyle = System.Windows.Forms.TickStyle.Both;
-            this.timeScaleTrackBar.Value = 100;
-            this.timeScaleTrackBar.Scroll += new System.EventHandler(this.timeScaleTrackBar_Scroll);
+            this.zMinLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.zMinLabel.Location = new System.Drawing.Point(26, 461);
+            this.zMinLabel.Name = "zMinLabel";
+            this.zMinLabel.Size = new System.Drawing.Size(171, 23);
+            this.zMinLabel.TabIndex = 24;
+            this.zMinLabel.Text = "zmin: 0";
+            this.zMinLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // middlePanel
+            // zMinTrackBar
             // 
-            this.middlePanel.Controls.Add(this.stopButton);
-            this.middlePanel.Controls.Add(this.startButton);
-            this.middlePanel.Controls.Add(this.timeScaleLabel);
-            this.middlePanel.Controls.Add(this.label2);
-            this.middlePanel.Controls.Add(this.pictureBox);
-            this.middlePanel.Controls.Add(this.timeScaleTrackBar);
-            this.middlePanel.Location = new System.Drawing.Point(209, 3);
-            this.middlePanel.Name = "middlePanel";
-            this.middlePanel.Size = new System.Drawing.Size(526, 622);
-            this.middlePanel.TabIndex = 4;
+            this.zMinTrackBar.LargeChange = 10;
+            this.zMinTrackBar.Location = new System.Drawing.Point(23, 487);
+            this.zMinTrackBar.Maximum = 100;
+            this.zMinTrackBar.Name = "zMinTrackBar";
+            this.zMinTrackBar.Size = new System.Drawing.Size(154, 45);
+            this.zMinTrackBar.SmallChange = 10;
+            this.zMinTrackBar.TabIndex = 25;
+            this.zMinTrackBar.TickFrequency = 20;
+            this.zMinTrackBar.Value = 100;
+            this.zMinTrackBar.Scroll += new System.EventHandler(this.zMinTrackBar_Scroll);
             // 
-            // label2
+            // axisLimitTitle
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 524);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(219, 23);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Time Scale";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // timeScaleLabel
-            // 
-            this.timeScaleLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.timeScaleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeScaleLabel.Location = new System.Drawing.Point(28, 590);
-            this.timeScaleLabel.Name = "timeScaleLabel";
-            this.timeScaleLabel.Size = new System.Drawing.Size(219, 23);
-            this.timeScaleLabel.TabIndex = 4;
-            this.timeScaleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // startButton
-            // 
-            this.startButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startButton.Location = new System.Drawing.Point(284, 550);
-            this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(82, 45);
-            this.startButton.TabIndex = 5;
-            this.startButton.Text = "Start";
-            this.startButton.UseVisualStyleBackColor = true;
-            this.startButton.Click += new System.EventHandler(this.startButton_Click);
-            // 
-            // stopButton
-            // 
-            this.stopButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.stopButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopButton.Location = new System.Drawing.Point(390, 550);
-            this.stopButton.Name = "stopButton";
-            this.stopButton.Size = new System.Drawing.Size(82, 45);
-            this.stopButton.TabIndex = 6;
-            this.stopButton.Text = "Stop";
-            this.stopButton.UseVisualStyleBackColor = true;
-            this.stopButton.Click += new System.EventHandler(this.stopButton_Click);
-            // 
-            // amplitude1Label
-            // 
-            this.amplitude1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amplitude1Label.Location = new System.Drawing.Point(26, 69);
-            this.amplitude1Label.Name = "amplitude1Label";
-            this.amplitude1Label.Size = new System.Drawing.Size(171, 23);
-            this.amplitude1Label.TabIndex = 7;
-            this.amplitude1Label.Text = "Amplitude: 0";
-            this.amplitude1Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // amplitude1TrackBar
-            // 
-            this.amplitude1TrackBar.LargeChange = 10;
-            this.amplitude1TrackBar.Location = new System.Drawing.Point(23, 95);
-            this.amplitude1TrackBar.Maximum = 100;
-            this.amplitude1TrackBar.Name = "amplitude1TrackBar";
-            this.amplitude1TrackBar.Size = new System.Drawing.Size(154, 45);
-            this.amplitude1TrackBar.SmallChange = 10;
-            this.amplitude1TrackBar.TabIndex = 8;
-            this.amplitude1TrackBar.TickFrequency = 20;
-            this.amplitude1TrackBar.Scroll += new System.EventHandler(this.amplitude1TrackBar_Scroll);
-            // 
-            // waveLength1Label
-            // 
-            this.waveLength1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.waveLength1Label.Location = new System.Drawing.Point(29, 143);
-            this.waveLength1Label.Name = "waveLength1Label";
-            this.waveLength1Label.Size = new System.Drawing.Size(171, 23);
-            this.waveLength1Label.TabIndex = 9;
-            this.waveLength1Label.Text = "Wavelength: 0";
-            this.waveLength1Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // waveLength1TrackBar
-            // 
-            this.waveLength1TrackBar.LargeChange = 10;
-            this.waveLength1TrackBar.Location = new System.Drawing.Point(26, 169);
-            this.waveLength1TrackBar.Maximum = 100;
-            this.waveLength1TrackBar.Name = "waveLength1TrackBar";
-            this.waveLength1TrackBar.Size = new System.Drawing.Size(154, 45);
-            this.waveLength1TrackBar.SmallChange = 10;
-            this.waveLength1TrackBar.TabIndex = 10;
-            this.waveLength1TrackBar.TickFrequency = 20;
-            this.waveLength1TrackBar.Value = 25;
-            this.waveLength1TrackBar.Scroll += new System.EventHandler(this.waveLength1TrackBar_Scroll);
-            // 
-            // frequency1Label
-            // 
-            this.frequency1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frequency1Label.Location = new System.Drawing.Point(26, 217);
-            this.frequency1Label.Name = "frequency1Label";
-            this.frequency1Label.Size = new System.Drawing.Size(171, 23);
-            this.frequency1Label.TabIndex = 11;
-            this.frequency1Label.Text = "Frequency: 0";
-            this.frequency1Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // frequency1TrackBar
-            // 
-            this.frequency1TrackBar.LargeChange = 10;
-            this.frequency1TrackBar.Location = new System.Drawing.Point(23, 243);
-            this.frequency1TrackBar.Maximum = 100;
-            this.frequency1TrackBar.Name = "frequency1TrackBar";
-            this.frequency1TrackBar.Size = new System.Drawing.Size(154, 45);
-            this.frequency1TrackBar.SmallChange = 10;
-            this.frequency1TrackBar.TabIndex = 12;
-            this.frequency1TrackBar.TickFrequency = 20;
-            this.frequency1TrackBar.Value = 10;
-            this.frequency1TrackBar.Scroll += new System.EventHandler(this.frequency1TrackBar_Scroll);
-            // 
-            // phase1Label
-            // 
-            this.phase1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phase1Label.Location = new System.Drawing.Point(23, 291);
-            this.phase1Label.Name = "phase1Label";
-            this.phase1Label.Size = new System.Drawing.Size(171, 23);
-            this.phase1Label.TabIndex = 13;
-            this.phase1Label.Text = "Phase 0 Pi";
-            this.phase1Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // phase1TrackBar
-            // 
-            this.phase1TrackBar.LargeChange = 10;
-            this.phase1TrackBar.Location = new System.Drawing.Point(20, 317);
-            this.phase1TrackBar.Maximum = 200;
-            this.phase1TrackBar.Name = "phase1TrackBar";
-            this.phase1TrackBar.Size = new System.Drawing.Size(154, 45);
-            this.phase1TrackBar.SmallChange = 10;
-            this.phase1TrackBar.TabIndex = 14;
-            this.phase1TrackBar.TickFrequency = 20;
-            this.phase1TrackBar.Scroll += new System.EventHandler(this.phase1TrackBar_Scroll);
-            // 
-            // viewRLabel
-            // 
-            this.viewRLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewRLabel.Location = new System.Drawing.Point(26, 424);
-            this.viewRLabel.Name = "viewRLabel";
-            this.viewRLabel.Size = new System.Drawing.Size(171, 23);
-            this.viewRLabel.TabIndex = 15;
-            this.viewRLabel.Text = "r: 3";
-            this.viewRLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // viewRTrackBar
-            // 
-            this.viewRTrackBar.LargeChange = 10;
-            this.viewRTrackBar.Location = new System.Drawing.Point(23, 450);
-            this.viewRTrackBar.Maximum = 100;
-            this.viewRTrackBar.Minimum = 1;
-            this.viewRTrackBar.Name = "viewRTrackBar";
-            this.viewRTrackBar.Size = new System.Drawing.Size(154, 45);
-            this.viewRTrackBar.SmallChange = 10;
-            this.viewRTrackBar.TabIndex = 16;
-            this.viewRTrackBar.TickFrequency = 5;
-            this.viewRTrackBar.Value = 3;
-            this.viewRTrackBar.Scroll += new System.EventHandler(this.viewRTrackBar_Scroll);
-            // 
-            // viewTitle
-            // 
-            this.viewTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewTitle.Location = new System.Drawing.Point(0, 388);
-            this.viewTitle.Name = "viewTitle";
-            this.viewTitle.Size = new System.Drawing.Size(200, 23);
-            this.viewTitle.TabIndex = 17;
-            this.viewTitle.Text = "View";
-            this.viewTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // viewTetaLabel
-            // 
-            this.viewTetaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewTetaLabel.Location = new System.Drawing.Point(26, 487);
-            this.viewTetaLabel.Name = "viewTetaLabel";
-            this.viewTetaLabel.Size = new System.Drawing.Size(171, 23);
-            this.viewTetaLabel.TabIndex = 18;
-            this.viewTetaLabel.Text = "teta: 0,4 Pi";
-            this.viewTetaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // viewTetaTrackBar
-            // 
-            this.viewTetaTrackBar.LargeChange = 10;
-            this.viewTetaTrackBar.Location = new System.Drawing.Point(23, 513);
-            this.viewTetaTrackBar.Maximum = 100;
-            this.viewTetaTrackBar.Name = "viewTetaTrackBar";
-            this.viewTetaTrackBar.Size = new System.Drawing.Size(154, 45);
-            this.viewTetaTrackBar.SmallChange = 10;
-            this.viewTetaTrackBar.TabIndex = 19;
-            this.viewTetaTrackBar.TickFrequency = 10;
-            this.viewTetaTrackBar.Value = 40;
-            this.viewTetaTrackBar.Scroll += new System.EventHandler(this.viewTetaTrackBar_Scroll);
-            // 
-            // viewFiLabel
-            // 
-            this.viewFiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewFiLabel.Location = new System.Drawing.Point(26, 548);
-            this.viewFiLabel.Name = "viewFiLabel";
-            this.viewFiLabel.Size = new System.Drawing.Size(171, 23);
-            this.viewFiLabel.TabIndex = 20;
-            this.viewFiLabel.Text = "fi: 0,2 Pi";
-            this.viewFiLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // viewFiTrackBar
-            // 
-            this.viewFiTrackBar.LargeChange = 10;
-            this.viewFiTrackBar.Location = new System.Drawing.Point(23, 574);
-            this.viewFiTrackBar.Maximum = 100;
-            this.viewFiTrackBar.Name = "viewFiTrackBar";
-            this.viewFiTrackBar.Size = new System.Drawing.Size(154, 45);
-            this.viewFiTrackBar.SmallChange = 10;
-            this.viewFiTrackBar.TabIndex = 21;
-            this.viewFiTrackBar.TickFrequency = 10;
-            this.viewFiTrackBar.Value = 20;
-            this.viewFiTrackBar.Scroll += new System.EventHandler(this.viewFiTrackBar_Scroll);
+            this.axisLimitTitle.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.axisLimitTitle.Location = new System.Drawing.Point(0, 424);
+            this.axisLimitTitle.Name = "axisLimitTitle";
+            this.axisLimitTitle.Size = new System.Drawing.Size(200, 23);
+            this.axisLimitTitle.TabIndex = 23;
+            this.axisLimitTitle.Text = "Axis limits";
+            this.axisLimitTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // phase2Label
             // 
-            this.phase2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phase2Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phase2Label.Location = new System.Drawing.Point(23, 291);
             this.phase2Label.Name = "phase2Label";
             this.phase2Label.Size = new System.Drawing.Size(171, 23);
@@ -444,7 +489,7 @@ namespace Polarization
             // 
             // frequency2Label
             // 
-            this.frequency2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frequency2Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.frequency2Label.Location = new System.Drawing.Point(26, 217);
             this.frequency2Label.Name = "frequency2Label";
             this.frequency2Label.Size = new System.Drawing.Size(171, 23);
@@ -467,7 +512,7 @@ namespace Polarization
             // 
             // waveLength2Label
             // 
-            this.waveLength2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.waveLength2Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.waveLength2Label.Location = new System.Drawing.Point(29, 143);
             this.waveLength2Label.Name = "waveLength2Label";
             this.waveLength2Label.Size = new System.Drawing.Size(171, 23);
@@ -490,7 +535,7 @@ namespace Polarization
             // 
             // amplitude2Label
             // 
-            this.amplitude2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amplitude2Label.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.amplitude2Label.Location = new System.Drawing.Point(26, 69);
             this.amplitude2Label.Name = "amplitude2Label";
             this.amplitude2Label.Size = new System.Drawing.Size(171, 23);
@@ -511,60 +556,15 @@ namespace Polarization
             this.amplitude2TrackBar.Value = 30;
             this.amplitude2TrackBar.Scroll += new System.EventHandler(this.amplitude2TrackBar_Scroll);
             // 
-            // axisLimitTitle
+            // rightPanelTitle
             // 
-            this.axisLimitTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.axisLimitTitle.Location = new System.Drawing.Point(0, 424);
-            this.axisLimitTitle.Name = "axisLimitTitle";
-            this.axisLimitTitle.Size = new System.Drawing.Size(200, 23);
-            this.axisLimitTitle.TabIndex = 23;
-            this.axisLimitTitle.Text = "Axis limits";
-            this.axisLimitTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // zMaxLabel
-            // 
-            this.zMaxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zMaxLabel.Location = new System.Drawing.Point(23, 535);
-            this.zMaxLabel.Name = "zMaxLabel";
-            this.zMaxLabel.Size = new System.Drawing.Size(171, 23);
-            this.zMaxLabel.TabIndex = 26;
-            this.zMaxLabel.Text = "zmax:";
-            this.zMaxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // zMaxTrackBar
-            // 
-            this.zMaxTrackBar.LargeChange = 10;
-            this.zMaxTrackBar.Location = new System.Drawing.Point(20, 561);
-            this.zMaxTrackBar.Maximum = 100;
-            this.zMaxTrackBar.Name = "zMaxTrackBar";
-            this.zMaxTrackBar.Size = new System.Drawing.Size(154, 45);
-            this.zMaxTrackBar.SmallChange = 10;
-            this.zMaxTrackBar.TabIndex = 27;
-            this.zMaxTrackBar.TickFrequency = 20;
-            this.zMaxTrackBar.Scroll += new System.EventHandler(this.zMaxTrackBar_Scroll);
-            // 
-            // zMinLabel
-            // 
-            this.zMinLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.zMinLabel.Location = new System.Drawing.Point(26, 461);
-            this.zMinLabel.Name = "zMinLabel";
-            this.zMinLabel.Size = new System.Drawing.Size(171, 23);
-            this.zMinLabel.TabIndex = 24;
-            this.zMinLabel.Text = "zmin: 0";
-            this.zMinLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // zMinTrackBar
-            // 
-            this.zMinTrackBar.LargeChange = 10;
-            this.zMinTrackBar.Location = new System.Drawing.Point(23, 487);
-            this.zMinTrackBar.Maximum = 100;
-            this.zMinTrackBar.Name = "zMinTrackBar";
-            this.zMinTrackBar.Size = new System.Drawing.Size(154, 45);
-            this.zMinTrackBar.SmallChange = 10;
-            this.zMinTrackBar.TabIndex = 25;
-            this.zMinTrackBar.TickFrequency = 20;
-            this.zMinTrackBar.Value = 100;
-            this.zMinTrackBar.Scroll += new System.EventHandler(this.zMinTrackBar_Scroll);
+            this.rightPanelTitle.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rightPanelTitle.Location = new System.Drawing.Point(0, 18);
+            this.rightPanelTitle.Name = "rightPanelTitle";
+            this.rightPanelTitle.Size = new System.Drawing.Size(200, 23);
+            this.rightPanelTitle.TabIndex = 0;
+            this.rightPanelTitle.Text = "y - Component";
+            this.rightPanelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PolarizationLab
             // 
@@ -584,24 +584,24 @@ namespace Polarization
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.timeScaleTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewFiTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewTetaTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewRTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phase1TrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.frequency1TrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waveLength1TrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amplitude1TrackBar)).EndInit();
             this.middlePanel.ResumeLayout(false);
             this.middlePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.amplitude1TrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.waveLength1TrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.frequency1TrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phase1TrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewRTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewTetaTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewFiTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeScaleTrackBar)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.zMaxTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zMinTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phase2TrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.frequency2TrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.waveLength2TrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.amplitude2TrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zMaxTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.zMinTrackBar)).EndInit();
             this.ResumeLayout(false);
 
         }

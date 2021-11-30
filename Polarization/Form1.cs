@@ -89,21 +89,21 @@ namespace Polarization
             amplitude1Label.Text = string.Format("Amplitude: {0}", (amplitude1TrackBar.Value / 100.0).ToString("0.00"));
             amplitude2Label.Text = string.Format("Amplitude: {0}", (amplitude2TrackBar.Value / 100.0).ToString("0.00"));
 
-            phase1Label.Text = string.Format("Phase: {0}", (phase1TrackBar.Value / 100.0).ToString("0.00"));
-            phase2Label.Text = string.Format("Phase: {0}", (phase2TrackBar.Value / 100.0).ToString("0.00"));
+            phase1Label.Text = string.Format("Phase: {0} π", (phase1TrackBar.Value / 100.0).ToString("0.00"));
+            phase2Label.Text = string.Format("Phase: {0} π", (phase2TrackBar.Value / 100.0).ToString("0.00"));
 
             waveLength1Label.Text = string.Format("Wavelength: {0}", (waveLength1TrackBar.Value / 100.0).ToString("0.00"));
             waveLength2Label.Text = string.Format("Wavelength: {0}", (waveLength2TrackBar.Value / 100.0).ToString("0.00"));
 
-            frequency1Label.Text = string.Format("Frequency: {0}", (frequency1TrackBar.Value / 10.0).ToString("0.00"));
-            frequency2Label.Text = string.Format("Frequency: {0}", (frequency2TrackBar.Value / 10.0).ToString("0.00"));
+            frequency1Label.Text = string.Format("Frequency: {0} Hz", (frequency1TrackBar.Value / 10.0).ToString("0.00"));
+            frequency2Label.Text = string.Format("Frequency: {0} Hz", (frequency2TrackBar.Value / 10.0).ToString("0.00"));
 
             zMinLabel.Text = string.Format("zmin: {0}", (zMinTrackBar.Value / -100.0).ToString("0.00"));
             zMaxLabel.Text = string.Format("zmax: {0}", (zMaxTrackBar.Value / 100.0).ToString("0.00"));
-
+             
             viewRLabel.Text = string.Format("r: {0}", (viewRTrackBar.Value / 1.0).ToString("0.00"));
-            viewTetaLabel.Text = string.Format("teta: {0}", (viewTetaTrackBar.Value / 100.0).ToString("0.00"));
-            viewFiLabel.Text = string.Format("fi: {0}", (viewFiTrackBar.Value / 100.0).ToString("0.00"));
+            viewTetaLabel.Text = string.Format("teta: {0} π", (viewTetaTrackBar.Value / 100.0).ToString("0.00"));
+            viewFiLabel.Text = string.Format("fi: {0} π", (viewFiTrackBar.Value / 100.0).ToString("0.00"));
         }
 
         private void ApplySliderValues()
