@@ -17,21 +17,21 @@ namespace Polarization.Models
             Data = new Polygon[1];
             this.c = new Color[1];
             this.bb = bb;
-            this.c[0] = Color.Black;
-            this.update();
+            this.c[0] = System.Drawing.Color.Black;
+            this.Update();
         }
 
-        public Color[] color()
+        public Color[] Color()
         {
             return this.c;
         }
 
-        public void update()
+        public void Update()
         {
             Data[0] = new Polygon(new Vector[] { new Vector(this.bb[0], 0.0, 0.0), new Vector(this.bb[3], 0.0, 0.0), new Vector(0.0, 0.0, 0.0), new Vector(0.0, this.bb[1], 0.0), new Vector(0.0, this.bb[4], 0.0), new Vector(0.0, 0.0, 0.0), new Vector(0.0, 0.0, this.bb[2]), new Vector(0.0, 0.0, this.bb[5]) });
         }
 
-        public void update(double n)
+        public void Update(double n)
         {
         }
     }

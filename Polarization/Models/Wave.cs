@@ -49,7 +49,7 @@ namespace Polarization.Models
             this.w[0] = 6.283185307179586 * n3;
             this.d[0] = n4;
             this.bb = bb;
-            this.update();
+            this.Update();
         }
 
         public void add(Wave wave)
@@ -64,45 +64,45 @@ namespace Polarization.Models
                 this.d[this.M + i] = wave.d[i];
             }
             this.M += wave.M;
-            this.update();
+            this.Update();
         }
 
-        public Color[] color()
+        public Color[] Color()
         {
             return this.c;
         }
 
-        public void update()
+        public void Update()
         {
-            this.rmin = Math.Min(this.bb[0] / this.n[0].x, this.bb[3] / this.n[0].x);
-            this.rmin = Math.Max(this.rmin, Math.Min(this.bb[1] / this.n[0].y, this.bb[4] / this.n[0].y));
-            this.rmin = Math.Max(this.rmin, Math.Min(this.bb[2] / this.n[0].z, this.bb[5] / this.n[0].z));
-            this.rmax = Math.Max(this.bb[0] / this.n[0].x, this.bb[3] / this.n[0].x);
-            this.rmax = Math.Min(this.rmax, Math.Max(this.bb[1] / this.n[0].y, this.bb[4] / this.n[0].y));
-            this.rmax = Math.Min(this.rmax, Math.Max(this.bb[2] / this.n[0].z, this.bb[5] / this.n[0].z));
-            this.update(0.0);
+            rmin = Math.Min(bb[0] / n[0].x, bb[3] / n[0].x);
+            rmin = Math.Max(rmin, Math.Min(bb[1] / n[0].y, bb[4] / n[0].y));
+            rmin = Math.Max(rmin, Math.Min(bb[2] / n[0].z, bb[5] / n[0].z));
+            rmax = Math.Max(bb[0] / n[0].x, bb[3] / n[0].x);
+            rmax = Math.Min(rmax, Math.Max(bb[1] / n[0].y, bb[4] / n[0].y));
+            rmax = Math.Min(rmax, Math.Max(bb[2] / n[0].z, bb[5] / n[0].z));
+            Update(0.0);
         }
 
-        public void update(double n)
+        public void Update(double n)
         {
-            this.t += n;
-            Vector[] array = new Vector[this.N];
-            for (int i = 0; i < this.N; ++i)
+            t += n;
+            Vector[] array = new Vector[N];
+            for (int i = 0; i < N; ++i)
             {
-                Vector scale = this.n[0].scale(i * (this.rmax - this.rmin) / (this.N - 1) + this.rmin);
+                Vector scale = this.n[0].scale(i * (rmax - rmin) / (N - 1) + rmin);
                 array[i] = scale;
-                for (int j = 0; j < this.M; ++j)
+                for (int j = 0; j < M; ++j)
                 {
-                    array[i] = array[i].add(this.e[j].scale(this.a[j] * Math.Cos(this.k[j] * this.n[j].mult(scale) - this.w[j] * this.t + this.d[j])));
+                    array[i] = array[i].add(e[j].scale(a[j] * Math.Cos(k[j] * this.n[j].mult(scale) - w[j] * t + d[j])));
                 }
             }
             Data[0] = new Polygon(array);
             Vector[] array2 = new Vector[5];
             Vector vector = new Vector(0.0, 0.0, 0.0);
             array2[1] = (array2[0] = vector);
-            for (int k = 0; k < this.M; ++k)
+            for (int k = 0; k < M; ++k)
             {
-                array2[1] = array2[1].add(this.e[k].scale(this.a[k] * Math.Cos(this.k[k] * this.n[k].mult(vector) - this.w[k] * this.t + this.d[k])));
+                array2[1] = array2[1].add(e[k].scale(a[k] * Math.Cos(this.k[k] * this.n[k].mult(vector) - w[k] * t + d[k])));
             }
             Vector subtract = array2[1].subtract(vector);
             Vector scale2 = subtract.prod(this.n[0]).subtract(subtract).scale(0.2);

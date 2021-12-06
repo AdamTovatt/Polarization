@@ -127,7 +127,7 @@ namespace Polarization
             double a = 3.141592653589793 * (viewTetaTrackBar.Value / 100.0);
             double n = 3.141592653589793 * (viewFiTrackBar.Value / 100.0);
             graph.view = new Vector(value * Math.Sin(a) * Math.Sin(n), value * Math.Cos(a), value * Math.Sin(a) * Math.Cos(n));
-            graph.updateView();
+            graph.UpdateView();
         }
 
         private void InitGraph()
@@ -166,7 +166,7 @@ namespace Polarization
             while (!cancellationToken.IsCancellationRequested)
             {
                 Thread.Sleep(1);
-                graph.update((DateTime.UtcNow - lastDrawTime).TotalSeconds * timeScale);
+                graph.Update((DateTime.UtcNow - lastDrawTime).TotalSeconds * timeScale);
                 lastDrawTime = DateTime.UtcNow;
             }
             isRunning = false;
@@ -174,7 +174,7 @@ namespace Polarization
 
         private void pictureBox_Paint(object sender, PaintEventArgs e)
         {
-            graph.draw(e.Graphics);
+            graph.Draw(e.Graphics);
         }
 
         private void pictureBox_Click(object sender, EventArgs e)

@@ -80,7 +80,7 @@ namespace Polarization.Models
             return this.r.Length;
         }
 
-        public Polygon pixel(Vector vector, Vector vector2)
+        public Polygon Pixel(Vector vector, Vector vector2)
         {
             Vector[] array = new Vector[this.r.Length];
             for (int i = 0; i < this.r.Length; ++i)
@@ -91,7 +91,7 @@ namespace Polarization.Models
             return new Polygon(array);
         }
 
-        public Polygon project(Vector vector)
+        public Polygon Project(Vector vector)
         {
             Vector[] array = new Vector[this.r.Length];
             Vector normalize = vector.normalize();
@@ -104,7 +104,7 @@ namespace Polarization.Models
             return new Polygon(array);
         }
 
-        public Polygon rotate(Vector vector)
+        public Polygon Rotate(Vector vector)
         {
             Vector[] array = new Vector[this.r.Length];
             Vector normalize = vector.normalize();

@@ -7,8 +7,8 @@ namespace Polarization.Models
         Color[] Colors { get; set; }
         Polygon[] Data { get; set; }
 
-        Color[] color();
-        void update();
-        void update(double p0);
+        Color[] Color();
+        void Update();
+        void Update(double p0);
     }
 }

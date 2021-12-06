@@ -23,41 +23,41 @@ namespace Polarization.Models
             this.axis = axis;
             this.wave = wave;
             this.view = view;
-            updateView();
+            UpdateView();
         }
 
         private void DrawAxis(Graphics graphics)
         {
             for (int i = 0; i < axis.Data.Length; ++i)
             {
-                Polygon pixel = axis.Data[i].project(view).rotate(view).pixel(origin, scale);
+                Polygon pixel = axis.Data[i].Project(view).Rotate(view).Pixel(origin, scale);
 
                 Pen pen = new Pen(Color.Black, 2);
                 graphics.DrawLines(pen, pixel.GetPoints());
             }
         }
 
-        public void draw(Graphics graphics)
+        public void Draw(Graphics graphics)
         {
             DrawAxis(graphics);
 
             for (int j = 0; j < wave.Data.Length; ++j)
             {
-                Polygon pixel2 = wave.Data[j].project(view).rotate(view).pixel(origin, scale);
+                Polygon pixel2 = wave.Data[j].Project(view).Rotate(view).Pixel(origin, scale);
 
                 Pen pen = new Pen(wave.Colors[j], j == 0 ? 3 : 4);
                 graphics.DrawLines(pen, pixel2.GetPoints());
             }
         }
 
-        public void update(double n)
+        public void Update(double n)
         {
-            wave.update(n);
+            wave.Update(n);
         }
 
-        public void updateView()
+        public void UpdateView()
         {
-            double[] boundingBox = axis.Data[0].rotate(view).boundingBox();
+            double[] boundingBox = axis.Data[0].Rotate(view).boundingBox();
             double min = Math.Min((w - 1) / (boundingBox[3] - boundingBox[0]), (h - 1) / (boundingBox[4] - boundingBox[1]));
             double n = -min;
             double n2 = (boundingBox[0] + boundingBox[3]) / 2.0 - (w - 1) / (2.0 * min);
